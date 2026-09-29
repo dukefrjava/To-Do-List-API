@@ -1,24 +1,24 @@
-# 📝 To-Do List API
+# To-Do List API
 
 API REST para gerenciamento de tarefas desenvolvida com **Java e Spring Boot**, como projeto prático do curso **Java com Spring Boot — Curso Introdutório**, da Rocketseat.
 
 O projeto foi desenvolvido com o objetivo de praticar conceitos de desenvolvimento Back-End, construção de APIs REST, persistência de dados, autenticação e organização de uma aplicação utilizando o ecossistema Spring.
 
-## 🚀 Tecnologias utilizadas
+## Tecnologias utilizadas
 
-* ☕ Java
-* 🌱 Spring Boot
+*  Java
+*  Spring Boot
 * Spring Web
 * Spring Data JPA
 * Hibernate
-* 🗄️ Banco de dados H2
-* 🔐 BCrypt
-* 📦 Maven
-* 🧰 Lombok
-* 🆔 UUID
-* 🌐 API REST
+* Banco de dados H2
+* BCrypt
+* Maven
+* Lombok
+* UUID
+* API REST
 
-## 📌 Funcionalidades
+## Funcionalidades
 
 ### Usuários
 
@@ -47,7 +47,7 @@ As prioridades disponíveis são:
 * `MEDIUM`
 * `HIGH`
 
-## 🔐 Autenticação
+## Autenticação
 
 O acesso às rotas de tarefas utiliza autenticação baseada no header `Authorization`.
 
@@ -55,9 +55,9 @@ O filtro `FilterTaskAuth` intercepta as requisições para `/task/`, decodifica 
 
 Quando a autenticação é validada, o ID do usuário é disponibilizado na requisição para que as operações sobre tarefas sejam associadas ao usuário autenticado.
 
-## 🌐 Endpoints
+## Endpoints
 
-### 👤 Usuários
+### Usuários
 
 #### Criar usuário
 
@@ -79,7 +79,7 @@ Caso o username já esteja cadastrado, a API retorna um erro informando que o us
 
 ---
 
-### ✅ Tarefas
+### Tarefas
 
 #### Criar tarefa
 
@@ -117,7 +117,7 @@ PUT /task/{id}
 
 Permite atualizar uma tarefa existente, com verificação do usuário associado à tarefa.
 
-## 🗄️ Persistência
+## Persistência
 
 A aplicação utiliza **Spring Data JPA** para trabalhar com a persistência dos dados.
 
@@ -125,13 +125,13 @@ O repositório de tarefas estende `JpaRepository` e possui uma consulta para bus
 
 O repositório de usuários também estende `JpaRepository` e possui uma busca específica por username.
 
-## 🛡️ Tratamento de erros
+## Tratamento de erros
 
 A aplicação possui um `@ControllerAdvice` para tratar erros relacionados a requisições HTTP com conteúdo inválido.
 
 Quando ocorre uma `HttpMessageNotReadableException`, a API retorna HTTP `400 BAD REQUEST` com a causa específica do erro.
 
-## 🧩 Estrutura do projeto
+## Estrutura do projeto
 
 ```text
 src
@@ -163,7 +163,7 @@ src
 
 A classe `TodolistApplication` é responsável pelo ponto de entrada da aplicação Spring Boot.
 
-## ▶️ Como executar o projeto
+## Como executar o projeto
 
 ### Pré-requisitos
 
@@ -201,7 +201,7 @@ mvnw.cmd spring-boot:run
 
 A aplicação será iniciada localmente.
 
-## 🧪 Testando a API
+## Testando a API
 
 Você pode utilizar ferramentas como:
 
@@ -212,7 +212,7 @@ Você pode utilizar ferramentas como:
 
 Para testar os endpoints protegidos, utilize autenticação **Basic Auth** com as credenciais de um usuário previamente cadastrado.
 
-## 📚 O que pratiquei neste projeto
+## O que pratiquei neste projeto
 
 Este projeto foi uma oportunidade para colocar em prática conceitos importantes do desenvolvimento Back-End com Java, incluindo:
 
@@ -231,12 +231,8 @@ Este projeto foi uma oportunidade para colocar em prática conceitos importantes
 * Persistência de dados
 * Organização de uma aplicação Back-End
 
-## 🎓 Sobre o projeto
+## Sobre o projeto
 
 Projeto desenvolvido durante o curso **Java com Spring Boot — Curso Introdutório**, da **Rocketseat**, como parte da minha jornada de aprendizado em desenvolvimento Back-End com Java.
 
 Também faz parte do meu processo de **complementação e aprofundamento dos conhecimentos em Java e Back-End que venho desenvolvendo durante minha formação**.
-
----
-
-⭐ Se este projeto foi útil para você, fique à vontade para deixar uma estrela no repositório!
